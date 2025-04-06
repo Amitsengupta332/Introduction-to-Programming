@@ -8,10 +8,14 @@ int main()
     if (tk >= 100)
     {
         printf("Burger Khabo \n");
+         
+    }
+    else if(tk>= 50){
+        printf("Fuska khabo");
     }
     else
     {
-        printf("Burger Khabo na \n");
+        printf(" kisui khabo na \n");
     }
     return 0;
 }
