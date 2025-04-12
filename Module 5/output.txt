@@ -1,1 +1,2 @@
-a
+ALPHA
+IS SMALL
