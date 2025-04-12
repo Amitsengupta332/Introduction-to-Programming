@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int marks = 76;
+    int marks = 90;
 
     if (marks >= 80)
     {
