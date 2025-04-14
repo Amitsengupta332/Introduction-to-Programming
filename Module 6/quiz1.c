@@ -1,12 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 0; i <= 10; i++)
+    for (int i = -4; i >= 0; i++)
     {
-        printf("hi ");
-        if(i>2){
-            break;
-        }
+         for (int j = 5; j < 2; j++)
+         {
+            printf("hi ");
+            /* code */
+         }
+         
         /* code */
     }
     
