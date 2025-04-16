@@ -9,11 +9,16 @@ int main()
         scanf("%d", &arr[i]);
         /* code */
     }
+
+    int sum = 0;
     for (int i = 0; i < n; i++)
     {
-       printf("%d ", arr[i]);
+
+        sum = sum + arr[i];
+        //    printf("%d ", arr[i]);
         /* code */
     }
-    
+    printf("%d", sum);
+
     return 0;
 }
