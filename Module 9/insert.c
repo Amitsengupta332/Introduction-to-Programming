@@ -15,6 +15,7 @@ int main()
     {
         a[i] = a[i-1];
     }
+    a[idx] = val;
 
     for (int i = 0; i <= n; i++)
     {
