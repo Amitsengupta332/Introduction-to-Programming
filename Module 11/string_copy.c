@@ -4,9 +4,9 @@ int main()
 {
     char a[101], b[101];
     scanf("%s %s", &a, &b);
+    strcpy(a, b);
     // int length = strlen(b);
 
-    strcpy(a, b);
     
     // for (int i = 0; i <= length; i++)
     // {
