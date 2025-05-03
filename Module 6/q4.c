@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i <=10; i++)
     {
-        if (i == 3)
+        if (i > 2)
         {
-            continue;
+          continue;;
         }
-        printf("%d", i);
+        printf( "hi ");
         /* code */
     }
 
