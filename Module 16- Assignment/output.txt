@@ -1,1 +1,1 @@
-Not Palindrome
+4 2
