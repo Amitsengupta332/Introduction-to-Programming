@@ -1,11 +1,16 @@
 #include <stdio.h>
 void hello(int i)
 {
-    if(i == 6)
+    if(i == 101)
     {
         return;
     }
-    printf("%d\n", i);
+    if (i % 2 == 0)
+    {
+        /* code */
+        printf("%d\n", i);
+    }
+    
     hello(i + 1);
 
 }
