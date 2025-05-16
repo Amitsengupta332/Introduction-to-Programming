@@ -1,93 +1,46 @@
-// #include <stdio.h>
-
-// int main()
-// {
-//     int n;
-//     scanf("%d", &n);
-//     return 0;
-// }
-
 #include <stdio.h>
 
 int main()
 {
-    int N;
-    scanf("%d", &N);
+    int n;
+    scanf("%d", &n);
 
-    int max_stars = 13;
-    int total_leaf_rows = 7;
-    int trunk_height = 5;
-    int trunk_width = N;
-
-    for (int i = 0; i < total_leaf_rows; i++)
+    // upper part of the tree
+    int tree_line = 6 + (n - 1) / 2;
+    int tree_max_width = 2 * tree_line - 1;
+    for (int i = 0; i < tree_line; i++)
     {
         int stars = 2 * i + 1;
-        int spaces = (max_stars - stars) / 2;
-
-        for (int s = 0; s < spaces; s++)
+        int spaces = (tree_max_width - stars) / 2;
+        for (int j = 0; j < spaces; j++)
         {
+            printf(" ");
+            /* code */
+        }
 
+        for (int j = 0; j < stars; j++)
+        {
+            printf("*");
+            /* code */
+        }
+        printf("\n");
+
+        /* code */
+    }
+
+    // lower part of the tree
+    for (int i = 0; i < 5; i++)
+    { // 5 rows of line
+        int spaces = (tree_max_width - n) / 2;
+        for (int j = 0; j < spaces; j++)
+        {
             printf(" ");
         }
-        for (int s = 0; s < stars; s++)
-        {
-
+        for (int j = 0; j < n; j++)
+        { // N stars in each row
             printf("*");
         }
         printf("\n");
     }
-
-    for (int i = 0; i < trunk_height; i++)
-    {
-        int spaces = (max_stars - trunk_width) / 2;
-
-        for (int s = 0; s < spaces; s++)
-            printf(" ");
-        for (int s = 0; s < trunk_width; s++)
-            printf("*");
-        printf("\n");
-    }
-
     return 0;
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     int N;
-//     scanf("%d", &N);
-
-//     int i, j;
-//     int top_height = N + 3;
-//     int max_width = 2 * top_height - 1;
-
-//     // Tree Top
-//     for (i = 1; i <= top_height; i++)
-//     {
-//         int stars = 2 * i - 1;
-//         int spaces = (max_width - stars) / 2;
-
-//         for (j = 0; j < spaces; j++)
-//             printf(" ");
-//         for (j = 0; j < stars; j++)
-//             printf("*");
-//         printf("\n");
-//     }
-
-//     // Tree Trunk (always 5 lines of N stars, centered)
-//     int trunk_lines = 5;
-//     int trunk_width = N;
-//     int trunk_spaces = (max_width - trunk_width) / 2;
-
-//     for (i = 0; i < trunk_lines; i++)
-//     {
-//         for (j = 0; j < trunk_spaces; j++)
-//             printf(" ");
-//         for (j = 0; j < trunk_width; j++)
-//             printf("*");
-//         printf("\n");
-//     }
-
-//     return 0;
-// }
