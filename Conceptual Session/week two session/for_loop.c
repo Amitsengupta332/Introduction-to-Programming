@@ -2,9 +2,23 @@
 
 int main()
 {
-    for(int counter = 1; counter <=5; counter++)
+
+    int n; 
+    scanf("%d", &n);
+    int i;
+
+    // forword 
+    for(i = n; i <= 5; i++)
     {
-        printf("%d\n", counter);
+        printf("%d ", i);
     }
+
+    // reverse
+    printf("\nReverse:\n");
+    for(i = n; i>=1; i--)
+    {
+        printf("%d ", i);
+    }
+
     return 0;
 }
