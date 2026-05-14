@@ -1,4 +1,1 @@
-array is : 
-10 20 30 40 50 
-Reverse array is : 
-50 40 30 20 10 
+150
